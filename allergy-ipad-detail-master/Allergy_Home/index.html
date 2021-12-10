@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Allergy AIT</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <!-- Background Image -->
+              <div class="bg-img" onclick=><img data-src="media/images/Allergy_Home.jpg" class="swiper-lazy"></div>
+              <div id="resp" onclick = "createItem1()" style="position: absolute; bottom: 10.5%; left: 1.5%; z-index: 1000; width: 5.5%; height:7%;"></div>
+              <div id="lung" onclick = "createItem2()" style="position: absolute; bottom: 10.5%; left: 6.5%; z-index: 1000; width: 5.5%; height:7%;"></div>
+              <div id="ent" onclick = "createItem3()" style="position: absolute; bottom: 10.5%; left: 11.5%; z-index: 1000; width: 5.5%; height:7%;"></div>
+              <!--<div class="swiper-lazy-preloader"></div>-->
+              <button onclick="readValue()">Get the item value</button>
+              <p id = "demo"></p>
+              <div class="bottom-menu"></div>
+          </div> 
+
+      </div>
+  </div>
+</body>
+<script src="js/cash.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<!-- <script src="js/swiper.min.js.map"></script> -->
+<script>
+  function createItem1(){
+    sessionStorage.setItem("speciality","Resp");
+  }
+
+  function createItem2(){
+    sessionStorage.setItem("speciality","Lung");
+  }
+
+  function createItem3(){
+    sessionStorage.setItem("speciality","ENT");
+  }
+
+  function readValue(){
+    var x = sessionStorage.getItem("speciality");
+    document.getElementById("demo").innerHTML = x;
+  }
+</script>
+<script src="js/mandatory.js"></script>
+<script src="js/scripts.js"></script>
+</html>

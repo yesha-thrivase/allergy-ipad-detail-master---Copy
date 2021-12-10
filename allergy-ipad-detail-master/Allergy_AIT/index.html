@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Allergy AIT</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <!-- Background Image -->
+              <div class="bg-img"><img data-src="media/images/Allergy_AIT_Considerations.jpg" class="swiper-lazy"></div>
+              <div id="navigator" style="position: absolute; top: 7.5%; left: 10%; z-index: 1000; width: 45.5%; height:7%;"></div>           
+              <div id="navigator2" style="position: absolute; bottom: 35%; right: 11%; z-index: 1000; width: 22.5%; height:6%;"></div>
+              <div id="navigator3" style="position: absolute; bottom: 35%; left: 10.5%; z-index: 1000; width: 28.5%; height:6%;"></div>
+              <!--<div class="swiper-lazy-preloader"></div>-->
+              <div class="bottom-menu"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_AI.jpg" class="swiper-lazy"></div>
+            <div id="aitRef" style="position: absolute; bottom: 1.5%; right: 1.5%; z-index: 1000; width: 5.5%; height:6%;"></div>
+            <div class="back-button" data-prevent-tap="true"></div>        
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div class="bottom-menu"></div>
+            
+          </div>
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_AI_Ref.png" class="swiper-lazy"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div class="back-button" data-prevent-tap="true" style="position:absolute; top:20%; left:65%;"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Polysensitised.jpg" class="swiper-lazy"></div>
+            <div id="polyRef" style="position: absolute; bottom: 1.5%; right: 1.5%; z-index: 1000; width: 5.5%; height:6%;"></div>
+            <div id="polyref1" style="position: absolute; bottom: 33%; left: 8.5%; z-index: 1000; width: 12.5%; height:6%;"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            
+            <div class="bg-img1">
+            <div id ="people_bg"></div>
+                <div id="cover"></div>
+                <img id="people" src="media/images/slider_people.png">
+                <input id="sliderValue" type = "text" size = "2" value ="0%" readonly/>
+                <input type="range" min="0" max="100" value="50" class="slider" id="slider1" onchange="updateTextInput();"/>
+               <p>Value: <span id="demo"></span> %</p>
+            </div>
+            
+          
+            <div class="bottom-menu"></div>
+            <!-- Other Buttons -->
+            <div class="back-button" data-prevent-tap="true"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Polysensitised2.jpg" class="swiper-lazy"></div>
+            <div id="IdnRef" style="position: absolute; bottom: 1.5%; right: 1.5%; z-index: 1000; width: 5.5%; height:6%;"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div class="bottom-menu"></div>
+            <!-- Other Buttons -->
+            <div class="back-button" data-prevent-tap="true"></div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Polysensitised_Ref.png" class="swiper-lazy"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+           
+            <div class="back-button" data-prevent-tap="true" style="position:absolute; top:20%; left:65%;"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Identify.jpg" class="swiper-lazy"></div>
+            <div id="IdnRef" style="position: absolute; bottom: 1.5%; right: 1.5%; z-index: 1000; width: 5.5%; height:6%;"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div class="bottom-menu"></div>
+            <!-- Other Buttons -->
+            <div class="back-button" data-prevent-tap="true"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Identify_Ref.png" class="swiper-lazy"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div class="back-button" data-prevent-tap="true" style="position:absolute; top:20%; left:65%;"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Modify_1.jpg" class="swiper-lazy"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div id="navigator4" style="position: absolute; bottom: 15%; right: 10.5%; z-index: 1000; width: 8.5%; height:6%;"></div>
+            <div id="modRef" style="position: absolute; bottom: 1.5%; right: 1.5%; z-index: 1000; width: 5.5%; height:6%;"></div>
+            <div class="bottom-menu"></div>
+            <!-- Other Buttons -->
+            <div class="back-button" data-prevent-tap="true"></div>
+          </div>
+
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Modify_2.jpg" class="swiper-lazy"></div>
+            <div id="modRef1" style="position: absolute; bottom: 1.5%; right: 1.5%; z-index: 1000; width: 5.5%; height:6%;"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div class="bottom-menu"></div>
+            <!-- Other Buttons -->
+            <div class="back-button" data-prevent-tap="true"></div>
+          </div>
+        
+          <div class="swiper-slide">
+            <!-- Background Image -->
+            <div class="bg-img"><img data-src="media/images/Allergy_AIT_Modify_Ref.png" class="swiper-lazy"></div>
+            <!--<div class="swiper-lazy-preloader"></div>-->
+            <div class="back-button" data-prevent-tap="true" style="position:absolute; top:20%; left:65%;"></div>
+          </div>
+
+      </div>
+  </div>
+</body>
+<script src="js/cash.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<!-- <script src="js/swiper.min.js.map"></script> -->
+<script>
+function updateTextInput() {
+      var val=document.getElementById('slider1').value;
+	  var cover=document.getElementById("cover");
+	  var sliderValue=document.getElementById('sliderValue');
+	  //document.getElementById('sliderValue').value=val;
+	  
+	  document.getElementById("slider1").onchange = function() {
+		sliderValue.value = this.value + "%";
+		cover.style.width = (0 + this.value * 5.04) + "px";
+		cover.style.right = (250 - this.value * 5.04) + "px";
+		}
+    }
+
+$(document).ready(function() {
+	
+		$('#slider1').val('0');
+		$('#sliderValue').val('0%');
+		
+		$('#people').on('click',function(){
+			$('#result, #result_value').fadeIn(1000);
+		});
+		
+		$('#result').on('click',function(){
+			$('#result, #result_value').fadeOut(1000);
+		});
+		
+		$("#people, #sliderValue, #slider1").animate({
+		opacity: '1'
+		},1000);
+		$("#cover, #people_bg").animate({
+			opacity: '1'
+		},1400);
+	});
+</script>
+
+
+<script src="js/mandatory.js"></script>
+<script src="js/scripts.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</html>

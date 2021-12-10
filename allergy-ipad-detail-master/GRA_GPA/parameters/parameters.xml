@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sequence Id="AM_Goal" xmlns="urn:param-schema">
+  <Links>
+    <!-- List all sequences in this ipad detail here, including the current sequence id -->
+    <Link SequenceId="ACA_Acarizax"/>
+    <Link SequenceId="GRA_GPI"/>
+    <Link SequenceId="Allergy_Guidelines"/>
+    <Link SequenceId="PAL_Spec_Hosp_Palexia_Profile"/>
+    <Link SequenceId="PAL_Spec_Hosp_MinHarm"/>
+    <Link SequenceId="PAL_Spec_Hosp_Summary"/>
+    <Link SequenceId="PAL_Spec_Hosp_Using_Palexia"/>
+    <Link SequenceId="PAL_Spec_Community"/>
+    <Link SequenceId="PAL_Spec_Community_Outcomes"/>
+    <Link SequenceId="PAL_Spec_Community_Palexia_Profile"/>
+    <Link SequenceId="PAL_Spec_Community_Summary"/>
+    <Link SequenceId="PAL_Spec_Community_Using_Palexia"/>
+    <Link SequenceId="PAL_Spec_Resources"/>
+    <Link SequenceId="PAL_Spec_PI"/>
+    <Link SequenceId="PAL_Spec_Indication"/>
+  </Links>
+  <Pages>
+    <!-- List all page ids for this sequence in here -->
+    <Page pageid="GRA_GPA_Home"/>
+    <Page pageid="AM_Goals_Home_2"/>
+    <Page pageid="AM_Goals_Home_Ref"/>
+  </Pages>
+</Sequence>
